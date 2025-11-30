@@ -18,10 +18,10 @@
         h1 {
             background-image: linear-gradient(to right, red, darkblue, purple, black);
             color: white;
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
             border-radius: 10px;
             text-align: center;
             margin: 15px 0;
+            margin-bottom: 25px;
         }
 
         menu {
@@ -43,14 +43,69 @@
             text-decoration: underline;
             transition: .5s;
         }
+
+        footer {
+            color: white;
+            background-color: black;
+            margin: 25px 0;
+            padding: 8px;
+            border-radius: 10px;
+        }
+
+        footer > p {
+            text-align: center;
+        }
+
+        footer > p.wapp {
+            margin: 1px 0;
+        }
+
+        footer > p.amarelo {
+            text-align: center;
+            color: yellow;
+        }
+
+        footer a {
+            color: yellow;
+            background-color: black;
+        }
+
+        footer a:hover {
+            color: plum;
+            background-color: black;
+        }
+
+        footer > p.verde-limao {
+            text-align: center;
+            color: greenyellow;
+        }
+
+        footer > p.rosa-claro {
+            text-align: center;
+            color: lightcoral;
+        }
+
+        .sombra {
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 <body>
-    <h1>Gabriel Pianista</h1>
-    <menu>
-        <a href="fotos.html">FOTOS</a>
-        <a href="videos.html">VÍDEOS</a>
-        <a href="audios.html">ÁUDIOS</a>
-    </menu>
-</body>
+    <header>
+        <h1 class="sombra">Gabriel Pianista</h1>
+    </header>
+    <main>
+        <menu>
+            <a class="sombra" href="fotos.html">FOTOS</a>
+            <a class="sombra" href="videos.html">VÍDEOS</a>
+            <a class="sombra" href="audios.html">ÁUDIOS</a>
+        </menu>
+    </main>    
+    <footer class="sombra">
+        <p class="amarelo">Desenvolvido por KURINGA Desenvolvimento Web.</p>
+        <p class="wapp"><a href="https://api.whatsapp.com/send?phone=5553999220370" target="_blank">WhatsApp: (53) 99922-0370</a></p>
+        <p class="verde-limao">Última atualização: 30/11/2025</p>
+        <p class="rosa-claro">&copy;&nbsp;2025 - Todos os direitos reservados.</p>
+    </footer>
+</main>
 </html>

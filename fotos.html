@@ -19,7 +19,6 @@
     h1 {
         background-image: linear-gradient(to right, red, darkblue, purple, black);
         color: white;
-        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
         border-radius: 10px;
         text-align: center;
         margin: 15px 0;
@@ -29,6 +28,14 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+    }
+
+    img {
+        height: 220px;
+        width: 220px;
+        margin: 7px;
+        border: 2px solid black;
+        border-radius: 15px;
     }
 
     a {
@@ -46,11 +53,22 @@
         text-decoration: underline;
         transition: .5s;
     }
+
+    .sombra {
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    }
 </style>
 <body> 
-    <h1>Fotos</h1>
+    <h1 class="sombra">Fotos</h1>
     <div>
-        <a href="index.html">VOLTAR</a>
+        <img src="fotos/foto-gabriel1.jpg" alt="Imagem">
+        <img src="fotos/foto-gabriel2.jpg" alt="Imagem">
+    </div>
+    <div>
+        <img src="fotos/foto-gabriel3.jpg" alt="Imagem">
+    </div>
+    <div>
+        <a class="sombra" href="index.html">VOLTAR</a>
     </div>
 </body>
 </html>
