@@ -14,9 +14,22 @@
             background-color: yellow;
         }
 
-        h1 {
+        div.aux {
+            display: flex;
+            justify-content: center;
+        }
+
+        div#moldura {
             margin-top: 15px;
-            margin-bottom: 9px;
+            border: 3px solid purple;
+            border-radius: 10px;
+            height: 151px;
+            width: 300px;
+            padding-top: 10px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
             text-decoration: underline;
         }
 
@@ -28,20 +41,22 @@
             text-align: center;
         }
 
-        div {
-            display: flex;
-            justify-content: center;
-            margin-top: 11px;
+        a {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Sobre</h1>
-    <p><strong>Nome:</strong> Gabriel Fernandes</p>
-    <p><strong>Idade:</strong> 13 anos</p>
-    <p><strong>Data de Nascimento:</strong> 03/04/2012</p>
-    <p><strong>Natural de:</strong> Rio Grande - RS - Brasil</p>    
-    <div>
+    <div class="aux">
+        <div id="moldura">
+            <h1>Sobre</h1>
+            <p><strong>Nome:</strong> Gabriel Fernandes</p>
+            <p><strong>Idade:</strong> 13 anos</p>
+            <p><strong>Data de Nascimento:</strong> 03/04/2012</p>
+            <p><strong>Natural de:</strong> Rio Grande - RS - Brasil</p>
+        </div>
+    </div>        
+    <div class="aux">
         <a href="index.html">VOLTAR</a>
     </div>
 </body>
