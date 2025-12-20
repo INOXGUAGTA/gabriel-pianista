@@ -29,7 +29,7 @@
 
         menu {
             text-align: center;
-            font-size: 15px;
+            font-size: 17px;
         }
 
         a {
@@ -92,10 +92,18 @@
             border-radius: 8px;
         }
 
-        footer > p.wapp {
+        footer > p > a.wapp {
             margin: 0;
             margin-top: 6px;
             padding: 0;
+        }
+
+        footer > p > a.wapp::before {
+            content: "\00A0\1F517";
+        }
+
+        footer > p > a.wapp::after {
+            content: "\00A0\1F517";
         }
 
         footer a {
@@ -149,8 +157,8 @@
     <footer class="sombra">
         <p class="amarelo">Desenvolvido por:</p>
         <a class="link-logo-kdw" href="kdw.html"><img class="kdw" src="fotos/kdw.jpeg" alt="Imagem"></a>
-        <p class="wapp"><a href="https://api.whatsapp.com/send?phone=5553999220370" target="_blank">WhatsApp: (53) 99922-0370</a></p>
-        <p class="verde-limao">Última atualização: 18/12/2025</p>
+        <p><a class="wapp" href="https://api.whatsapp.com/send?phone=5553999220370" target="_blank">WhatsApp: (53) 99922-0370</a></p>
+        <p class="verde-limao">Última atualização: 20/12/2025</p>
         <p class="rosa-claro">&copy;&nbsp;2025 - Todos os direitos reservados.</p>
     </footer>
 </main>
