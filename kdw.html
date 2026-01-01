@@ -28,7 +28,7 @@
             height: auto;
             border: 3px double black;
             border-radius: 20px;
-            margin-bottom: 7px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
         }
 
         h2 {
@@ -69,16 +69,19 @@
             margin-top: 22px;
             margin-bottom: 20px;
         }
+
+        .sombra-texto {
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 <body>
-    <audio src="audios/advertising.mp3" autoplay loop></audio>
-    <br>
+    <audio src="audios/advertising.mp3" autoplay loop></audio><br>
     <div>
         <img src="fotos/kdw.jpeg" alt="Imagem">
-        <h2>CRIAÇÃO DE WEBSITES</h2>
-        <p>ENTRE EM CONTATO CONOSCO E FAÇA O SEU ORÇAMENTO.</p>
-        <p class="wapp"><a class="link-wapp" href="https://api.whatsapp.com/send?phone=5553999220370" target="_blank">WhatsApp: (53) 99922-0370</a></p>
+        <h2 class="sombra-texto">CRIAÇÃO DE WEBSITES</h2>
+        <p style="font-weight: bold;">ENTRE EM CONTATO CONOSCO E FAÇA O SEU ORÇAMENTO.</p>
+        <p style="font-weight: bold;"class="wapp"><a class="link-wapp" href="https://api.whatsapp.com/send?phone=5553999220370" target="_blank">WhatsApp: (53) 99922-0370</a></p>
         <a href="index.html">VOLTAR</a>
     </div>    
 </body>
