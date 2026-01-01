@@ -27,8 +27,16 @@
             margin-bottom: 25px;
         }
 
+        .fundo-logo {
+            background-image: url(fotos/fundo-logo.png);
+            background-position: bottom;
+            background-size: cover;
+            background-attachment: fixed;
+            border-radius: 15px;
+            margin: 0 10px;
+        }
 
-       .logo-gabriel {
+        .logo-gabriel {
             display: block;
             margin: 0 auto;
             margin-top: -10px;
@@ -149,7 +157,9 @@
     <header>
         <h1 class="sombra">Site Musical</h1>
         <hr>
-        <img class="logo-gabriel" src="fotos/logo-gabriel.png" alt="Imagem">
+        <div class="fundo-logo">
+            <img class="logo-gabriel" src="fotos/logo-gabriel.png" alt="Imagem">
+        </div>    
         <hr><br>
     </header>
     <main>
